@@ -14,13 +14,11 @@ class App extends React.Component {
 
   fetchQuote = () => {
      axios.get("https://gist.githubusercontent.com/natebass/b0a548425a73bdf8ea5c618149fe1fce/raw/f4231cd5961f026264bb6bb3a6c41671b044f1f4/quotes.json")
-    // const quote = response.data[this.randomNumber(0, response.data.length-1)].quote;
-    //  this.state.quote = quote;
         .then((response) => {
           const quote = response.data[this.randomNumber(0, response.data.length-1)].quote;
 
           this.setState({ quote });
-           console.log(response.data[this.randomNumber(0, response.data.length-1)].quote);
+           // console.log(response.data[this.randomNumber(0, response.data.length-1)].quote);
         })
         .catch((error) => {
           console.log(error);
