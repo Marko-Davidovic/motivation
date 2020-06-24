@@ -34,7 +34,7 @@ class App extends React.Component {
     return(
       <div className="app">
         <div className="card">
-          <h1 className="heading">{this.state.quote}</h1>
+          <h1 className="heading">''{this.state.quote}''</h1>
           <h2>"<i>{this.state.author}</i>"</h2>
           <button className="button" onClick={this.fetchQuote}>
             <span>GIVE ME QUOTE!</span>
