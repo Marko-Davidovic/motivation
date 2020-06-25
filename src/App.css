@@ -30,8 +30,8 @@
 }
 @media (min-width: @screen-sm-min) and (min-width: @screen-md-min) and (min-width: @screen-lg-min) {
   .card {
-      width: 80%;
-      height: 40%;
+      width: 90%;
+      height: 50%;
   }
 }
 
